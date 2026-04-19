@@ -4,5 +4,6 @@ main {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    font-size: clamp(2rem, 10vh, 8rem);
 }
 
