@@ -1,9 +1,30 @@
 main {
     min-height: 100vh;
+    text-align: center;
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    font-size: clamp(2rem, 10vh, 8rem);
 }
 
+main > div {
+    border: 1px solid black;
+    width: 80%;
+    font-size: max(1rem, 8vh);
+}
+
+.article-container {
+    padding: 1rem;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-container > div {
+    border: 1px solid black;
+    width: 100%;
+    font-size: max(0.5rem, 6vh);
+}
