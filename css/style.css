@@ -45,6 +45,12 @@ main {
     gap: 0.5em;
 }
 
+@media (orientation: landscape) {
+    main {
+        flex-flow: row-reverse nowrap;
+    }
+}
+
 .article-container {
     padding: 0.25em;
     background-color: var(--article-container-color);
@@ -54,6 +60,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 0.5em;
+    flex: 3;
 }
 
 .article-container > div {
@@ -64,6 +71,7 @@ main {
 
 .aside {
     background-color: var(--aside-color);
+    flex: 1;
 }
 
 footer {
