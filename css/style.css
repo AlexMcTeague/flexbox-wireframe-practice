@@ -9,6 +9,7 @@
 
 main {
     min-height: 100vh;
+    min-width: 250px;
     text-align: center;
     color: black;
     background-color: var(--main-color);
@@ -17,12 +18,13 @@ main {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    font-size: max(1rem, 8vh);
+    gap: 0.5em;
 }
 
 main > div {
-    border: 1px solid black;
+    border-radius: 0.5em;
     width: 80%;
-    font-size: max(1rem, 8vh);
 }
 
 .header {
@@ -30,19 +32,20 @@ main > div {
 }
 
 .article-container {
-    padding: 1rem;
+    padding: 0.25em;
     background-color: var(--article-container-color);
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    gap: 0.5em;
 }
 
 .article-container > div {
-    border: 1px solid black;
+    border-radius: 0.5em;
     width: 100%;
-    font-size: max(0.5rem, 6vh);
+    font-size: 0.75em;
     background-color: var(--article-color);
 }
 
