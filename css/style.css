@@ -7,7 +7,16 @@
     --footer-color: #00f5d4;
 }
 
-body {
+#link-section {
+    position: absolute;
+    left: 1rem;
+
+    color: blue;
+    font-size: max(1rem, 3vh);
+}
+
+#content-section {
+    min-height: 100vh;
     min-width: 250px;
     text-align: center;
     color: black;
@@ -21,7 +30,7 @@ body {
     gap: 0.5em;
 }
 
-body > * {
+#content-section > * {
     border-radius: 0.5em;
     width: 80%;
 }
