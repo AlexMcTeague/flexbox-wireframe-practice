@@ -1,6 +1,17 @@
+:root {
+    --main-color: floralwhite;
+    --header-color: #9b5de5;
+    --article-container-color: #f15bb5;
+    --article-color: #fee440;
+    --aside-color: #00bbf9;
+    --footer-color: #00f5d4;
+}
+
 main {
     min-height: 100vh;
     text-align: center;
+    color: black;
+    background-color: var(--main-color);
 
     display: flex;
     flex-flow: column nowrap;
@@ -14,9 +25,14 @@ main > div {
     font-size: max(1rem, 8vh);
 }
 
+.header {
+    background-color: var(--header-color);
+}
+
 .article-container {
     padding: 1rem;
-    
+    background-color: var(--article-container-color);
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -27,4 +43,13 @@ main > div {
     border: 1px solid black;
     width: 100%;
     font-size: max(0.5rem, 6vh);
+    background-color: var(--article-color);
+}
+
+.aside {
+    background-color: var(--aside-color);
+}
+
+.footer {
+    background-color: var(--footer-color);
 }
